@@ -59,3 +59,6 @@ with open("lamps.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     writer.writerow(["название товара", "цена", "ссылка"])
     writer.writerows(parsed_data)
+
+
+open("lamps.csv", "a", newline="", encoding="utf-8").close()
